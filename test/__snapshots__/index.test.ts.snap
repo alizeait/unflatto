@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flatto should unflatten arrays correctly 1`] = `
+Array [
+  false,
+  null,
+  0,
+  "",
+  undefined,
+  NaN,
+]
+`;
+
+exports[`flatto should unflatten correctly 1`] = `
+Object {
+  "key1": Object {
+    "keyA": "valueI",
+  },
+  "key2": Object {
+    "keyB": "valueII",
+  },
+  "key3": Object {
+    "a": Object {
+      "b": Object {
+        "c": 2,
+      },
+    },
+  },
+  "key4": Array [],
+  "key5": Object {
+    "a": Array [
+      "value1",
+      "value2",
+      Object {
+        "key1": Object {
+          "keyA": "valueI",
+          "keyB": Array [
+            1,
+            2,
+            3,
+            4,
+          ],
+        },
+      },
+    ],
+    "b": null,
+    "c": undefined,
+  },
+  "key6": Object {},
+}
+`;
+
+exports[`flatto should unflatten with correct seperator 1`] = `
+Object {
+  "key1": Object {
+    "keyA": "valueI",
+  },
+  "key2": Object {
+    "keyB": "valueII",
+  },
+  "key3": Object {
+    "a": Object {
+      "b": Object {
+        "c": 2,
+      },
+    },
+  },
+  "key4": Array [],
+  "key5": Object {
+    "a": Array [
+      "value1",
+      "value2",
+      Object {
+        "key1": Object {
+          "keyA": "valueI",
+          "keyB": Array [
+            1,
+            2,
+            3,
+            4,
+          ],
+        },
+      },
+    ],
+    "b": null,
+    "c": undefined,
+  },
+  "key6": Object {},
+}
+`;

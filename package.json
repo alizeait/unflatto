@@ -1,0 +1,68 @@
+{
+  "name": "@alizeait/unflatto",
+  "version": "1.0.0",
+  "description": "A tiny (~210B) and fast flattened object expander, unflattener",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "npx jest",
+    "lint": "eslint"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "browser": "dist/index.modern.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.modern.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json",
+    "./": "./"
+  },
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alizeait/unflatto.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "object",
+    "array",
+    "nested",
+    "flat",
+    "unflatten",
+    "expand",
+    "nest",
+    "seperator",
+    "fast",
+    "tiny",
+    "small"
+  ],
+  "author": {
+    "name": "Ali Zeaiter",
+    "email": "rassoali.arz@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alizeait/unflatto/issues"
+  },
+  "homepage": "https://github.com/alizeait/unflatto#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "benchmark": "^2.1.4",
+    "codecov": "^3.8.1",
+    "eslint": "^7.18.0",
+    "flat": "^5.0.2",
+    "jest": "^26.6.3",
+    "microbundle": "^0.13.0",
+    "obj-unflatten": "^1.0.10",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
+  }
+}
