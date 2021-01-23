@@ -1,4 +1,4 @@
-function arrayOrObj(key: string | number): [] | {} {
+function arrayOrObj(key: string | number): [] | Record<string, any> {
   const char = (key + "").charCodeAt(0);
   return char < 48 || char > 57 ? {} : [];
 }
