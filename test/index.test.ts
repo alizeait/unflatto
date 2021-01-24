@@ -1,7 +1,7 @@
 const mock = require("../mock");
 const { unflatto } = require("../src");
 
-describe("flatto", () => {
+describe("unflatto", () => {
   test("should unflatten correctly", () => {
     expect(unflatto(mock)).toMatchSnapshot();
   });

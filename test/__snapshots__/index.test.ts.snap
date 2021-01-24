@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`flatto should unflatten arrays correctly 1`] = `
+exports[`unflatto should unflatten arrays correctly 1`] = `
 Array [
   false,
   null,
@@ -11,7 +11,7 @@ Array [
 ]
 `;
 
-exports[`flatto should unflatten correctly 1`] = `
+exports[`unflatto should unflatten correctly 1`] = `
 Object {
   "key1": Object {
     "keyA": "valueI",
@@ -50,7 +50,7 @@ Object {
 }
 `;
 
-exports[`flatto should unflatten with correct seperator 1`] = `
+exports[`unflatto should unflatten with correct seperator 1`] = `
 Object {
   "key1": Object {
     "keyA": "valueI",
