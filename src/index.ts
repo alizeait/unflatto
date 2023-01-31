@@ -2,10 +2,10 @@ function arrayOrObj(key: string | number): [] | Record<string, any> {
   const char = (key + "").charCodeAt(0);
   return char < 48 || char > 57 ? {} : [];
 }
-export function unflatto(
-  input: Record<string, any>,
+export function unflatto<Input extends Record<string, any>, Output = unknown>(
+  input: Input,
   seperator?: string
-): unknown {
+): Output {
   let i = 0,
     ancestor: any,
     chunk: string,
