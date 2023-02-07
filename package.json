@@ -1,26 +1,15 @@
 {
   "name": "@alizeait/unflatto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tiny (~210B) and fast flattened object expander, unflattener",
   "scripts": {
-    "build": "microbundle",
+    "build": "microbundle -f modern,cjs",
     "dev": "microbundle watch",
     "test": "npx jest",
     "lint": "eslint"
   },
   "main": "dist/index.js",
-  "module": "dist/index.module.js",
-  "unpkg": "dist/index.umd.js",
-  "browser": "dist/index.modern.js",
-  "exports": {
-    ".": {
-      "browser": "./dist/index.modern.js",
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
-    },
-    "./package.json": "./package.json",
-    "./": "./"
-  },
+  "module": "dist/index.modern.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
