@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`unflatto should unflatten arrays correctly 1`] = `
-Array [
+[
   false,
   null,
   0,
@@ -12,29 +12,29 @@ Array [
 `;
 
 exports[`unflatto should unflatten correctly 1`] = `
-Object {
-  "key1": Object {
+{
+  "key1": {
     "keyA": "valueI",
   },
-  "key2": Object {
+  "key2": {
     "keyB": "valueII",
   },
-  "key3": Object {
-    "a": Object {
-      "b": Object {
+  "key3": {
+    "a": {
+      "b": {
         "c": 2,
       },
     },
   },
-  "key4": Array [],
-  "key5": Object {
-    "a": Array [
+  "key4": [],
+  "key5": {
+    "a": [
       "value1",
       "value2",
-      Object {
-        "key1": Object {
+      {
+        "key1": {
           "keyA": "valueI",
-          "keyB": Array [
+          "keyB": [
             1,
             2,
             3,
@@ -46,34 +46,34 @@ Object {
     "b": null,
     "c": undefined,
   },
-  "key6": Object {},
+  "key6": {},
 }
 `;
 
 exports[`unflatto should unflatten with correct seperator 1`] = `
-Object {
-  "key1": Object {
+{
+  "key1": {
     "keyA": "valueI",
   },
-  "key2": Object {
+  "key2": {
     "keyB": "valueII",
   },
-  "key3": Object {
-    "a": Object {
-      "b": Object {
+  "key3": {
+    "a": {
+      "b": {
         "c": 2,
       },
     },
   },
-  "key4": Array [],
-  "key5": Object {
-    "a": Array [
+  "key4": [],
+  "key5": {
+    "a": [
       "value1",
       "value2",
-      Object {
-        "key1": Object {
+      {
+        "key1": {
           "keyA": "valueI",
-          "keyB": Array [
+          "keyB": [
             1,
             2,
             3,
@@ -85,6 +85,6 @@ Object {
     "b": null,
     "c": undefined,
   },
-  "key6": Object {},
+  "key6": {},
 }
 `;

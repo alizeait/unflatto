@@ -5,7 +5,7 @@
   "scripts": {
     "build": "microbundle -f modern,cjs",
     "dev": "microbundle watch",
-    "test": "npx jest",
+    "test": "jest",
     "lint": "eslint"
   },
   "main": "dist/index.js",
