@@ -1,6 +1,6 @@
 {
   "name": "@alizeait/unflatto",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny (~210B) and fast flattened object expander, unflattener",
   "scripts": {
     "build": "microbundle -f modern,cjs",
