@@ -23,6 +23,13 @@ export function unflatto<Input extends Record<string, any>, Output = unknown>(
     ancestor = ancestor || parent;
     for (; i < keys.length; i++) {
       currentKey = nextKey || keys[i];
+      if (
+        currentKey === "prototype" ||
+        currentKey === "__proto__" ||
+        currentKey === "constructor"
+      ) {
+        break;
+      }
       nextKey = keys[i + 1];
       if (currentKey in parent) {
         parent = parent[currentKey];
